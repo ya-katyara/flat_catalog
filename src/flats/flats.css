@@ -1,0 +1,278 @@
+.FlatsResultTable-row {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: border-color .4s ease;
+    background: #fff;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: #959ba6;
+    letter-spacing: 0;
+    text-align: right;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    padding: 16px 24px;
+    box-sizing: border-box;
+    will-change: auto;
+    position: relative;
+}
+.FlatsResultTable-link, .FlatsResultTable-row {
+    text-decoration: none;
+    display: flex;
+}
+.FlatsResultTable-link {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+.FlatsResultTable-rowInfo {
+    display: flex;
+    justify-content: left;
+}
+.FlatsResultTable-rowPrice {
+    border-left: 1px solid #efefef;
+    height: auto;
+    width: auto;
+    padding-left: 16px;
+    min-width: 119px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color .4s ease;
+    will-change: auto;
+    justify-content: space-between;
+}
+.FlatsResultTable-rowPriceMeter, .FlatsResultTable-rowPriceTitle {
+    font-family: Circe, 'CirceRounded';
+    letter-spacing: 0;
+    text-align: right;
+    line-height: 32px;
+}
+.FlatsResultTable-rowPriceMeter {
+    font-size: 14px;
+    color: #959ba6;
+}
+.FlatsResultTable-rowPriceTitle {
+    font-size: 17px;
+    color: #222;
+    font-weight: 800;
+}
+.FlatsResultTable-rowLayout {
+    width: 104px;
+    display: block;
+    height: 100%;
+    max-height: 110px;
+    background-size: cover;
+    margin-right: 32px;
+    text-align: center;
+    background-position: 50%;
+}
+.FlatsResultTable-rowLayout img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.FlatsResultTable-rowTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.FlatsResultTable-rowTitle--section {
+    font-size: 12px;
+    color: #959ba6;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+.FlatsResultTable-rowTitle--room {
+    font-family: Circe, 'CirceRounded';
+    font-weight: 600;
+    font-size: 22px;
+    color: #222;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+.FlatsResultTable-rowTitle--feature {
+    font-family: Circe, 'CirceRounded';
+    font-size: 12px;
+    color: #959ba6;
+    letter-spacing: 0;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.FlatsResultTable-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hsla(0,0%,100%,.75);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s ease,visibility .4s ease;
+}
+.FlatsResultTable {
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s linear;
+    opacity: 1;
+    top: 0;
+}
+.Picking-result-wrapper {
+    padding-top: 0;
+}
+.Picking-result-wrapper, .Picking-result-wrapper--load {
+    -webkit-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+.Picking-result-wrapper {
+    max-width: 736px;
+    width: 100%;
+}
+.Picking-wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 55vh;
+    padding-top: 36px;
+    box-sizing: border-box;
+    position: relative;
+}
+.FlatsResultTable-row:hover {
+    border-color: #ccc;
+    cursor: pointer;
+}
+.FlatsResultTable-rowBanners {
+    justify-content: flex-start;
+    position: relative;
+}
+.FlatsResultTable-rowBanners, .FlatsResultTable-rowDiscount {
+    display: flex;
+    align-items: center;
+}
+.FlatsResultTable-rowFinishing {
+    padding: 4px 8px 3px;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    font-family: Circe, 'CirceRounded';
+    font-size: 11px;
+    color: #ccc;
+    letter-spacing: 0;
+    text-align: center;    
+    font-weight: 700;
+    box-sizing: border-box;
+}
+.FlatsResultTable-rowFinishingTrue {
+    color: #55bb01;
+    padding: 4px 6px 2px 5px;
+    border: 1px solid rgba(85,187,1,.3);
+}
+.FlatsResultTable-rowBanners svg {
+    fill: #ffbd13;
+    width: 10px;
+    height: 13px;
+    margin-left: 15px;
+}
+.LockIcon:before,
+.LockIcon:after {
+    content: none;
+}
+.LockIcon:hover:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 6px 8px 6px 0;
+    border-color: transparent #2e2e2e transparent transparent;
+    left: calc(100% + 6px);
+    top: 5px;
+}
+.LockIcon:hover:after {
+    content: "Квартира забронирована";
+    position: absolute;
+    white-space: nowrap;
+    font-family: Circe, 'CirceRounded';
+    top: -5px;
+    left: calc(100% + 10px);
+    padding: 8px 21px;
+    background: #2e2e2e;
+    opacity: 1!important;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 0;
+    line-height: 16px;
+    border-radius: 3px;
+    z-index: 1000;
+}
+.FlatsResultTable-rowFinishingTrue a {
+    color: #55bb01;
+    text-decoration: none;
+}
+.FlatsFooterText {
+    background: #FBFBFB;
+    text-align: center;
+    font-size: 16px;
+    font-family: Circe, 'CirceRounded';
+    margin-bottom: 16px;
+    border-radius: 4px;
+    padding: 16px 24px;
+}
+.FlatsFooterText b {
+    font-size: 18px;
+}
+.FlatsFooterText p {
+    font-weight: 300;
+}
+.FlatsFooterText a {
+    color: #008FF6;
+}
+.FlatsResultTable--show {
+    animation: fadeShow .5s linear
+}
+.FlatsResultTable--hide {
+    animation: fadeOut .5s linear;
+    opacity: 0
+}
+
+.FlatsResultTable--load {
+    opacity: 0;
+    top: 50px;
+    -webkit-transition: all .6s linear;
+    transition: all .6s linear
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes fadeShow {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotateX(-11deg);
+        transform: rotateX(-11deg)
+    }
+
+    to {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        opacity: 1
+    }
+}
+.Picking-popupHead svg {
+    cursor: pointer;
+}

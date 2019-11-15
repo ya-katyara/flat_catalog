@@ -1,0 +1,750 @@
+@media only screen and (max-width: 1175px) {
+    .Picking-wrapper {
+        max-width:938px
+    }
+
+    .Picking-result-wrapper {
+        width: calc(100% - 320px)
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    
+    .Picking-filter .btnScheme {
+        display: none;
+    }
+    .Picking-wrapper {
+        -webkit-box-orient:vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding-top: 0;
+        position: relative;
+        padding-bottom: 16px
+    }
+
+    .Picking-result-mobile {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    .Picking-result-mobileHeader {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .Picking-result-mobileFilter svg {
+        display: none
+    }
+
+    .Picking-result-wrapper {
+        min-width: 100%;
+        margin-top: 16px
+    }
+
+    .Picking-pinned {
+        position: absolute!important;
+        bottom: -50px
+    }
+    .Picking-popup {
+        visibility: hidden
+    }
+
+    .Picking-popupHead {
+        display: flex;
+        position: relative;
+        box-shadow: inset 0 -1px 0 0 #e6e6e6;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 32px;
+        font-weight: 500
+    }
+
+    .Picking-popupHead svg {
+        padding: 14px;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+
+    .Picking-popupComplex {
+        display: block;
+        margin-bottom: 32px
+    }
+
+    .Picking-popupFilter {
+        height: 100%;
+        padding: 0 0 28px;
+        overflow: scroll
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .Picking-result-mobileFilter {
+        width:48px;
+        height: 48px;
+        bottom: 16px;
+        left: 13px
+    }
+
+    .Picking-result-mobileFilter span {
+        display: none
+    }
+
+    .Picking-result-mobileFilter svg {
+        display: block
+    }
+
+    .Picking-result-wrapper {
+        min-width: 100%;
+        margin-top: 0
+    }
+}
+@media only screen and (max-width: 767px) {
+    html.noscroll {
+        height:100%!important;
+        padding-right: 0
+    }
+
+    html.noscroll,html.noscroll.one-height {
+        overflow: hidden!important
+    }
+
+    html.noscroll.one-height body {
+        overflow-y: hidden
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .FilterMobile {
+        -webkit-box-pack:center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+}
+
+@media (orientation: landscape) {
+    .FilterMobile {
+        -webkit-box-pack:center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+}
+@media only screen and (max-width: 1175px) {
+    .Flats-navWrapper {
+        padding:0 16px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .Flats-bannerWrapper {
+        padding:0 16px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Flats,.Flats-head {
+        margin:0 auto
+    }
+
+    .Flats-head {
+        width: 100%;
+        height: 200px
+    }
+
+    .Flats-navWrapper,.Flats-switch {
+        padding: 0 16px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    .Flats-switch {
+        width: 100%;
+        position: fixed;
+        bottom: 16px;
+        z-index: 8;
+        -webkit-box-shadow: 0 0 20px 9px #fff;
+        box-shadow: 0 0 20px 9px #fff
+    }
+
+    .Flats-switch-pinned {
+        position: relative!important;
+        height: 0;
+        bottom: 32px
+    }
+
+    .Flats-switchButton,.Flats-switchButton--active {
+        width: 50%
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .Flats-title {
+        text-align:center;
+        font-size: 24px;
+        padding: 0 8px
+    }
+
+    .Flats-navWrapper {
+        padding: 8px 12px
+    }
+
+    .Flats-navSort {
+        padding: 0 12px;
+        border-right: 1px solid #e6e6e6;
+        border-left: 1px solid #e6e6e6;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .Flats-navSort select {
+        text-transform: none;
+        font-family: Graphik;
+        width: auto;
+        color: #4d4d4d;
+        font-weight: 500
+    }
+
+    .Flats-navSort--bulk {
+        padding: 0 12px 0 0;
+        border-left: none;
+        width: 47%!important
+    }
+
+    .Flats-navFilter {
+        color: #4d4d4d
+    }
+
+    .Flats-navFilter,.Flats-navFilterCount {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-weight: 500;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    .Flats-navFilterCount {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #f63;
+        color: #fff;
+        font-size: 9px;
+        margin-left: 4px;
+        padding-top: 2px
+    }
+
+    .Flats-navSwitchItem {
+        padding: 0;
+        color: #4d4d4d
+    }
+
+    .Flats-navSwitchItem:first-child {
+        border: none
+    }
+
+    .Flats-navSwitchItem:hover {
+        color: #4d4d4d
+    }
+
+    .Flats-navSort svg {
+        margin-right: 5px
+    }
+
+    .Flats-navFilter,.Flats-navSort,.Flats-navSwitch {
+        height: 100%;
+        font-size: 14px;
+        width: 33%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .Flats-navFilter select,.Flats-navSort select,.Flats-navSwitch select {
+        font-size: 14px
+    }
+
+    .Flats-navFilter svg,.Flats-navSort svg,.Flats-navSwitch svg {
+        width: 8px;
+        height: 5px;
+        stroke: #999;
+        margin-left: 5px
+    }
+
+    .Flats-banner {
+        padding: 12px 16px 16px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+        background: #f6f6f6
+    }
+
+    .Flats-bannerWrapper {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 16px 16px 28px;
+        -webkit-box-shadow: 0 6px 20px 0 rgba(0,0,0,.08);
+        box-shadow: 0 6px 20px 0 rgba(0,0,0,.08)
+    }
+
+    .Flats-bannerContent {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start
+    }
+
+    .Flats-bannerContent svg {
+        margin-bottom: 13px
+    }
+
+    .Flats-bannerDescription {
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 18px
+    }
+
+    .Flats-bannerTitle {
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 26px;
+        margin-bottom: 7px;
+        padding-top: 0;
+        padding-right: 20px
+    }
+
+    .Flats-banner:after {
+        content: none
+    }
+}
+@media only screen and (max-width: 767px) {
+    .FlatsResultTable {
+        border:none;
+        border-radius: 0;
+        margin-top: 0;
+        padding: 0
+    }
+
+    .FlatsResultTable .NothingToShow {
+        margin-top: 24px
+    }
+
+    .FlatsResultTable-data {
+        padding: 7px 0 16px
+    }
+
+    .FlatsResultTable-count {
+        margin-bottom: 0;
+        padding: 0 16px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    .FlatsResultTable-row {
+        padding: 8px;
+        margin-bottom: 4px;
+        border: none
+    }
+
+    .FlatsResultTable-rowWrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 10px
+    }
+
+    .FlatsResultTable-rowInfo,.FlatsResultTable-rowPrice {
+        width: 100%
+    }
+
+    .FlatsResultTable-rowPrice {
+        padding-left: 0;
+        border: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+
+    .FlatsResultTable-rowPriceTitle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        line-height: normal;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    .FlatsResultTable-rowPriceMeter {
+        font-weight: 400;
+        padding-left: 8px;
+        font-size: 12px;
+        line-height: normal;
+        align-self: flex-end;
+    }
+
+    .FlatsResultTable-rowPriceWish {
+        padding-top: 0;
+        display: none
+    }
+
+    .FlatsResultTable-rowInfo {
+        /* flex-direction: row-reverse; */
+        justify-content: space-between;
+        min-width: 70%;
+    }
+
+    .FlatsResultTable-rowLayout {
+        margin-right: 20px;
+        width: 60px;
+        height: 100%;
+        line-height: 100%;
+        display: inherit;
+    }
+
+    .FlatsResultTable-rowTitle {
+        width: 100%
+    }
+
+    .FlatsResultTable-rowTitle--reserved {
+        padding-top: 0;
+        display: inline-block;
+        margin-left: 8px;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: relative;
+        width: auto;
+        top: 0;
+        left: 0
+    }
+
+    .FlatsResultTable-rowTitle--room {
+        text-align: left;
+        font-size: 18px;
+        line-height: 17px;
+        margin-bottom: 2px
+    }
+
+    .FlatsResultTable-rowTitle--feature span {
+        color: #959ba6;
+        line-height: 24px;
+        font-size: 12px;
+    }
+
+    .FlatsResultTable-rowTitle--section {
+        font-size: 12px;
+        margin-bottom: 0;
+        font-weight: 400;
+        line-height: 21px;
+        color: #959ba6;
+        text-transform: none;
+        letter-spacing: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+    .FlatFilter {
+        width:296px
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .FlatFilter {
+        width:100%;
+        border: none;
+        max-width: 528px;
+        margin: 0 auto
+    }
+
+    .FlatFilter-filter {
+        padding: 0
+    }
+
+    .FlatFilter-finish {
+        margin: 0
+    }
+
+    .FlatFilter-inputsItem {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 48%;
+        flex: 0 0 48%
+    }
+
+    .FlatFilter-inputs-finish {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .FlatFilter-inputsWrapper {
+        width: 100%
+    }
+
+    .FlatFilter-mortgage {
+        margin-bottom: 0
+    }
+
+    .FlatFilter-mortgageTitle {
+        padding: 21px 0
+    }
+
+    .FlatFilter-mortgageContainer {
+        padding: 0
+    }
+
+    .FlatFilter-wrapper {
+        border: none;
+        padding: 0 0 18px
+    }
+
+    .FlatFilter-wrapper:first-child {
+        padding: 0 0 46px
+    }
+
+    .FlatFilter-wrapper:last-child {
+        border: none
+    }
+
+    .FlatFilter-wrapper .DropdownCheckboxMenu,.FlatFilter-wrapper .DropdownCheckboxMenu-block {
+        max-width: none
+    }
+
+    .FlatFilter-more {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #959ba6;
+        padding-top: 9px
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .FlatFilter-wrapper {
+        padding:0 16px 18px
+    }
+
+    .FlatFilter-wrapper:first-child {
+        padding: 0
+    }
+
+    .FlatFilter-wrapperMore {
+        margin-top: 16px
+    }
+
+    .FlatFilter-filter {
+        padding: 0 16px
+    }
+
+    .FlatFilter-finish,.FlatFilter-mortgage {
+        margin: 0 16px
+    }
+}
+@media only screen and (max-width: 900px) {
+    .FlatData {
+        height:auto;
+        border-bottom: none
+    }
+
+    .FlatData-floor {
+        height: 380px;
+        width: 100%;
+        margin-top: 0;
+        position: inherit;
+        margin-left: 0;
+        padding: 0 10px;
+    }
+
+    .FlatData-floor a {
+        width: calc(100% - 20px);
+    }
+
+    .FlatData-name {
+        max-width: 60%;
+        top: 14px
+    }
+
+    .FlatData-name .FlatName-title {
+        font-size: 22px;
+        color: #242424;
+        letter-spacing: 0;
+        line-height: 30px
+    }
+
+    .FlatData-compass {
+        left: 0;
+        right: auto;
+        top: 94px
+    }
+}
+@media only screen and (max-width: 900px) {
+    .FlatImages {
+        width:100%;
+        height: 468px
+    }
+
+    .FlatImages-mview {
+        top: 104px;
+        right: 16px;
+        width: 32px;
+        height: 32px;
+        background: #fcfcfc;
+        border: 1px solid #dbdbdb;
+        color: #4a4a4a;
+        font-size: 12px
+    }
+
+    .FlatImages-mview:hover {
+        border: 1px solid #eaeaea;
+        -webkit-box-shadow: 0 5px 20px 0 rgba(0,0,0,.07);
+        box-shadow: 0 5px 20px 0 rgba(0,0,0,.07);
+        color: #4a4a4a
+    }
+
+    .FlatImages .PlaningSlide-background {
+        width: 100%;
+        max-height: 250px;
+        margin-top: 160px;
+    }
+    .close {
+        right: 15px;
+    }
+    .FlatInfo-row {
+        flex-basis: 48%;
+    }
+    .FlatInfo-row:last-child {
+        flex-basis: 100%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .PlaningSlide-image--planing {
+        transition-timing-function: ease;
+        transition-duration: .4s;
+        transition-property: none;
+        will-change: none
+    }
+    .LockIcon:hover:after {
+        max-width: 100px;
+        text-align: center;
+        white-space: normal;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .FlatSwitch {
+        width:100%;    
+        top: 70px;
+        bottom: auto
+    }
+    .FlatSwitch-buttons {
+        width: 250px;
+    }
+    .FlatSwitch-button {
+        flex: 0 0 125px;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .FlatInfo {
+        position:relative;
+        width: 100%;
+        right: 0
+    }
+
+    .FlatInfo-block {
+        border: none;
+        border-bottom: none;
+        border-radius: 0;
+        padding-bottom: 24px;
+        margin-top: 0
+    }
+
+    .FlatInfo-blockFeature {
+        padding: 0 16px
+    }
+
+    .FlatInfo-blockFeature .FlatInfo-callback {
+        border: 1px solid #e6e6e6;
+        border-radius: 4px;
+        min-width: 49%;
+        width: 49%;
+        height: 32px;
+        font-size: 14px
+    }
+
+    .FlatInfo-tooltipWrapper {
+        -webkit-transform: translateX(-20%);
+        -ms-transform: translateX(-20%);
+        transform: translateX(-20%);
+        left: 20%
+    }
+
+    .FlatInfo-tooltipWrapper:after {
+        left: 21%
+    }
+
+    .FlatInfo-row--furniture {
+        padding: 0 16px
+    }
+}
+
+@media only screen and (max-width: 359px) {
+    .FlatInfo-tooltipWrapper {
+        -webkit-transform:translateX(-25%);
+        -ms-transform: translateX(-25%);
+        transform: translateX(-25%);
+        left: 25%
+    }
+
+    .FlatInfo-tooltipWrapper:after {
+        left: 26%
+    }
+}

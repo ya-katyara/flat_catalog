@@ -1,0 +1,65 @@
+.FlatSwitch {
+    position: absolute;
+    z-index: 10;
+    top: 89px;
+    left: 0;
+    width: calc(100% - 401px);
+}
+.FlatSwitch, .FlatSwitch-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.FlatSwitch-buttons {
+    background: #fff;
+    width: 370px;
+}
+.ComplexSwitchContainer-container {
+    width: 100%;
+    position: relative;
+}
+.FlatSwitch-button {
+    box-sizing: border-box;
+    height: 49px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: Circe, 'CirceRounded';
+    color: #000;
+    letter-spacing: 0;
+    transition: color .4s ease;
+    z-index: 1;
+    position: relative;
+    border: 1px solid #D2D2D2;
+    min-width: inherit;
+    flex: 0 0 185px;
+    cursor: pointer;
+}
+.FlatSwitch-button, .FlatSwitch-button span {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.FlatSwitch-button-flat {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.FlatSwitch-button-floor {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.FlatSwitch-button--active {
+    color: #fff;
+    background: #0F6CB4;
+    border-color: #0F6CB4;
+}
+.ComplexSwitchContainer-active {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-radius: 4px;
+    left: 2px;
+    background: #fff;
+    transition: transform .4s ease;
+}

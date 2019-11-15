@@ -1,0 +1,134 @@
+.FlatDropDownCheckboxMenu {
+    max-width: 432px;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    height: 44px;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.FlatDropDownCheckboxMenu-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.FlatDropDownCheckboxMenu-block {
+    max-width: 432px;
+    width: calc(100% + 2px);
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    max-height: 310px;
+    overflow-y: auto;
+    left: -1px;
+    top: 48px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    visibility: hidden;
+    box-shadow: 0 20px 20px rgba(0,0,0,.08);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50% 0;
+    transform: translate3d(0,10px,0) scaleX(1) skew(0deg,0deg) skewX(0deg) skewY(0deg) translateZ(0) rotateX(0deg) rotateY(0deg) rotate(0deg) translateZ(0);
+}
+.FlatDropDownCheckboxMenu-open .FlatDropDownCheckboxMenu-block {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-in-out;
+    transform: translate3d(0,3px,0) scaleX(1) skew(0deg,0deg) skewX(0deg) skewY(0deg) translateZ(0) rotateX(0deg) rotateY(0deg) rotate(0deg) translateZ(0);
+}
+.FlatDropDownCheckboxMenu-placeholder {
+    color: #7a7a7a;
+    padding-left: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all .2s ease-in-out;
+    transform-origin: 0 0;
+    position: relative;
+    font-size: 16px;
+    top: 10px;
+    padding-right: 37px;
+}
+.FlatDropDownCheckboxMenu-open .FlatDropDownCheckboxMenu-placeholder {
+    color: #7a7a7a;
+    transition: all .2s ease-in-out;
+    transform: scale(.7);
+    transform-origin: 2% -24px;
+    padding-left: 13px;
+}
+.FlatDropDownCheckboxMenu-hasValue .FlatDropDownCheckboxMenu-placeholder {
+    color: #7a7a7a;
+    transition: all .2s ease-in-out;
+    transform: scale(.7);
+    transform-origin: 2% -24px;
+    padding-left: 13px;
+}
+.FlatDropDownCheckboxMenu-placeholder, .FlatDropDownCheckboxMenu-value {
+    font-family: Circe, 'CirceRounded';
+    letter-spacing: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.FlatDropDownCheckboxMenu-placeholder, .FlatDropDownCheckboxMenu-value {
+    font-family: Circe, 'CirceRounded';
+    letter-spacing: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.FlatDropDownCheckboxMenu-value {
+    font-size: 14px;
+    color: #222;
+    padding-left: 12px;
+    position: absolute;
+    top: 22px;
+    width: 86%;
+}
+.FlatDropDownCheckboxMenu-arrow {
+    position: absolute;
+    right: 16px;
+    top: 22%;
+}
+.FlatDropDownCheckboxMenu-item {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding-left: 16px;
+    font-size: 14px;
+    color: #484848;
+    letter-spacing: 0;
+    cursor: pointer;
+    position: relative;
+}
+.FlatDropDownCheckboxMenu-item, .FlatDropDownCheckboxMenu-item:hover {
+    transition: background-color .1s ease-in-out;
+}
+.FlatDropDownCheckboxMenu-item:hover {
+    background-color: #fafafa;
+}
+.FlatDropDownCheckboxMenu-open {
+    border: 1px solid #ccc;
+}
+.FlatDropDownCheckboxMenu-arrow svg {
+    transition: transform .3s ease;
+    stroke: #979797;
+}
+.FlatDropDownCheckboxMenu-arrow svg path {
+    fill-rule: "evenodd";
+    stroke-linecap: "round"; 
+    stroke-linejoin: "round"; 
+    stroke-width: 2;
+}
+.FlatDropDownCheckboxMenu-open .FlatDropDownCheckboxMenu-arrow svg {
+    transform: rotate(180deg);
+    stroke: #26334d;
+}

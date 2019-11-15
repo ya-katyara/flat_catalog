@@ -1,0 +1,53 @@
+.FlatFilter-inputsWrapperDual .FlatFilter-inputsItem input {
+    font-size: 14px;
+    color: #222;
+    letter-spacing: 0;
+    padding-left: 12px;
+    position: absolute;
+    top: 16px;
+    height: 26px;
+}
+.FlatFilter-inputsWrapperDual .Input input {
+    border: none;
+    color: #222;
+}
+.Input-placeholder {
+    position: absolute;
+    left: 13px;
+    top: 10px;
+    font-size: 11px;
+    color: #7a7a7a;
+    letter-spacing: 0;
+}
+.FlatFilter-inputsWrapperDual .Input-placeholder {
+    left: 11px;
+    top: 4px;
+    font-size: 10px;
+}
+.FlatFilter-inputsItem {
+    height: 42px;
+    flex: 0 0 124px;
+}
+.FlatFilter-inputsWrapperDual .FlatFilter-inputsItem {
+    flex-basis: 50%;
+    box-sizing: border-box;
+    position: relative;
+}
+.FlatFilter-inputsWrapperDual .FlatFilter-inputsItem {
+    flex-basis: 50%;
+    box-sizing: border-box;
+    position: relative;
+}
+.FlatFilter-inputsWrapperDual {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+}
+.FlatFilter-inputsWrapperDual .FlatFilter-inputsItem:last-child:before {
+    content: "";
+    width: 1px;
+    height: 35px;
+    position: absolute;
+    background: #e6e6e6;
+    z-index: 1;
+    top: 4px;
+}
